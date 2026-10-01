@@ -60,5 +60,12 @@ window.COLART_CLIENTS = [
     category: "Beauty & Personal Care",
     logoFit: "contain",
     accent: "mint"
+  },
+  {
+    slug: "relaxtime",
+    name: "Relax Time",
+    category: "Trading · Gold, Forex & Bitcoin",
+    logoFit: "contain",
+    accent: "yellow"
   }
 ];
