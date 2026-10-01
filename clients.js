@@ -36,6 +36,8 @@ window.COLART_CLIENTS = [
     slug: "delarabitar",
     name: "Delara Bitar",
     category: "Tattoo & Art Studio",
+    logo: "assets/delara-bitar-logo.svg",
+    logoFit: "contain",
     accent: "magenta"
   },
   {
@@ -56,6 +58,7 @@ window.COLART_CLIENTS = [
     slug: "josephfarah",
     name: "Joseph Farah",
     category: "Beauty & Personal Care",
+    logoFit: "contain",
     accent: "mint"
   }
 ];
