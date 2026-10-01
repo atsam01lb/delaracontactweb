@@ -43,6 +43,7 @@ window.COLART_CLIENTS = [
     name: "Nakha Khasa",
     nameAr: "نكهة خاصة",
     category: "Restaurant & Café",
+    logoFit: "contain",
     accent: "lime"
   },
   {
