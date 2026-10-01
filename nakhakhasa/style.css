@@ -82,7 +82,7 @@ body::before {
   margin: 0 auto;
   padding: 16px 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .chip {
@@ -234,6 +234,8 @@ body::before {
 .link:hover { transform: translateY(-3px); border-color: var(--green-300); box-shadow: var(--shadow-soft); }
 .link--red    { --tone: var(--red-500);  --tone-bg: var(--red-50); }
 .link--orange { --tone: #d97f0b;         --tone-bg: var(--orange-50); }
+.link--wa     { --tone: #1ea952;         --tone-bg: #e4f8ec; }
+.link--wa:hover     { border-color: rgba(37, 211, 102, .45); }
 .link--red:hover    { border-color: rgba(206, 35, 39, .35); }
 .link--orange:hover { border-color: rgba(243, 156, 35, .5); }
 
@@ -257,6 +259,35 @@ body::before {
 .link__go { flex: none; color: var(--ink-mute); transition: color .25s, transform .3s var(--ease); }
 .link__go svg { width: 18px; height: 18px; }
 .link:hover .link__go { color: var(--tone); transform: translateX(3px); }
+
+/* ============ GET LISTED (Colart) ============ */
+.listed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 36px;
+  padding: 16px 16px 16px 20px;
+  border-radius: var(--radius-card);
+  border: 1.5px dashed var(--hairline-strong);
+  background: rgba(255, 255, 255, .5);
+  transition: border-color .25s, background .25s;
+}
+.listed:hover { border-color: #25d366; background: #fff; }
+.listed__q { display: block; font-size: 15px; color: var(--ink-mute); }
+.listed__a { display: block; font-size: 17px; font-weight: 700; color: var(--ink); }
+.listed__icon {
+  flex: none;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  transition: transform .3s var(--ease);
+}
+.listed__icon svg { width: 22px; height: 22px; }
+.listed:hover .listed__icon { transform: scale(1.08); }
 
 /* ============ FOOTER ============ */
 .footer {
@@ -327,6 +358,7 @@ body::before {
   .links li:nth-child(4) { animation-delay: .82s; }
   .links li:nth-child(5) { animation-delay: .90s; }
   .links li:nth-child(n+6) { animation-delay: .98s; }
+  .listed { animation: fadeUp .8s 1.05s var(--ease) both; }
 }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
 @keyframes logoIn { from { opacity: 0; transform: scale(.86) rotate(-6deg); } to { opacity: 1; transform: none; } }
