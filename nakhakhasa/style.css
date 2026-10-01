@@ -352,13 +352,14 @@ body::before {
   .menu-cta::after { animation: sheen 1.4s 1.2s ease both; }
   .section-label { animation: fadeUp .9s .5s var(--ease) both; }
   .links li    { animation: fadeUp .8s var(--ease) both; }
-  .links li:nth-child(1) { animation-delay: .58s; }
-  .links li:nth-child(2) { animation-delay: .66s; }
-  .links li:nth-child(3) { animation-delay: .74s; }
-  .links li:nth-child(4) { animation-delay: .82s; }
-  .links li:nth-child(5) { animation-delay: .90s; }
-  .links li:nth-child(n+6) { animation-delay: .98s; }
-  .listed { animation: fadeUp .8s 1.05s var(--ease) both; }
+  .links--contact li { animation-delay: .58s; }
+  .section-label:nth-of-type(2) { animation-delay: .66s; }
+  .links--follow li:nth-child(1) { animation-delay: .74s; }
+  .links--follow li:nth-child(2) { animation-delay: .82s; }
+  .links--follow li:nth-child(3) { animation-delay: .90s; }
+  .links--follow li:nth-child(4) { animation-delay: .98s; }
+  .links--follow li:nth-child(n+5) { animation-delay: 1.06s; }
+  .listed { animation: fadeUp .8s 1.14s var(--ease) both; }
 }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
 @keyframes logoIn { from { opacity: 0; transform: scale(.86) rotate(-6deg); } to { opacity: 1; transform: none; } }
