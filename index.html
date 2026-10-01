@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Colart Links | Everything You Need. One Link.</title>
+  <meta name="description" content="Discover businesses, brands and creators powered by Colart. One link for every profile in the Colart ecosystem.">
+  <meta name="theme-color" content="#642878">
+  <link rel="canonical" href="https://links.colartdigitalmarketingagency.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Colart Links">
+  <meta property="og:title" content="Colart Links | Everything You Need. One Link.">
+  <meta property="og:description" content="Discover businesses, brands and creators powered by Colart.">
+  <meta property="og:url" content="https://links.colartdigitalmarketingagency.com/">
+  <meta property="og:image" content="https://links.colartdigitalmarketingagency.com/assets/favicon.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Noto+Kufi+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="links.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Colart Links home">
+        <img src="assets/colart-mark.svg" alt="" width="34" height="32">
+        <span class="brand-name"><b>Colart</b> <span>Links</span></span>
+      </a>
+      <a class="header-link" href="https://colartdigitalmarketingagency.com" target="_blank" rel="noopener">
+        <span><span class="long">Colart </span>website</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1 class="hero-title"><span>Everything</span> <span>You Need.</span> <strong>One Link.</strong></h1>
+          <p class="hero-sub">Discover businesses, brands and creators powered by Colart.</p>
+
+          <form class="search" role="search" onsubmit="return false">
+            <label for="q" class="sr-only">Search profiles</label>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="q" type="search" placeholder="Search businesses or categories" autocomplete="off" spellcheck="false" enterkeyhint="go" aria-controls="grid">
+            <kbd aria-hidden="true">/</kbd>
+          </form>
+          <p class="hero-count" id="count"></p>
+        </div>
+
+        <div class="eco" id="eco" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="directory" aria-labelledby="dir-title">
+      <div class="wrap">
+        <div class="dir-head">
+          <h2 id="dir-title">Directory</h2>
+          <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+        </div>
+
+        <ul class="grid" id="grid"></ul>
+
+        <div class="empty" id="empty">
+          <p>No profiles match <span id="empty-term"></span>.</p>
+          <p>Try a business name, a person, or a category like “Restaurant”.</p>
+          <button type="button" id="clear">Show all profiles</button>
+        </div>
+        <p class="sr-only" role="status" aria-live="polite" id="status"></p>
+
+        <noscript><p>Turn on JavaScript to browse the Colart Links directory.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-brand">
+        <img src="assets/colart-mark.svg" alt="" width="30" height="29" loading="lazy">
+        <p><b>Colart Links</b>Powered by <a href="https://colartdigitalmarketingagency.com" target="_blank" rel="noopener">Colart Digital Marketing Agency</a></p>
+      </div>
+      <p class="foot-copy">© <span id="year">2026</span> Colart. We Create… You Grow!</p>
+    </div>
+  </footer>
+
+  <script src="clients.js"></script>
+  <script src="links.js"></script>
+</body>
+</html>
