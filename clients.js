@@ -51,6 +51,7 @@ window.COLART_CLIENTS = [
   {
     slug: "abouhamzerestaurant",
     name: "Abou Hamze Restaurant",
+    nameAr: "مطعم أبو حمزة",
     category: "Restaurant",
     accent: "teal"
   },
@@ -67,5 +68,12 @@ window.COLART_CLIENTS = [
     category: "Trading · Gold, Forex & Bitcoin",
     logoFit: "contain",
     accent: "yellow"
+  },
+  {
+    slug: "samelhindy",
+    name: "Sam El Hindy",
+    category: "Creative Strategist & Entrepreneur",
+    logoFit: "cover",
+    accent: "purple"
   }
 ];
